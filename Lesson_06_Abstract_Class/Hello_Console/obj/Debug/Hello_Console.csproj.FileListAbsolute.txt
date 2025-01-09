@@ -1,0 +1,7 @@
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\bin\Debug\Hello_Console.exe.config
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\bin\Debug\Hello_Console.exe
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\bin\Debug\Hello_Console.pdb
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\obj\Debug\Hello_Console.csproj.AssemblyReference.cache
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\obj\Debug\Hello_Console.csproj.CoreCompileInputs.cache
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\obj\Debug\Hello_Console.exe
+C:\Users\culle\Desktop\Lesson_06_Abstract_Class\Hello_Console\obj\Debug\Hello_Console.pdb
