@@ -1,0 +1,42 @@
+﻿<Window x:Class="PROG2500_A2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG2500_A2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <Border Margin="10,79,650,148" BorderBrush="PaleGoldenrod" BorderThickness="4">
+            <StackPanel>
+                <Button Content="Mouth 1" Click="ShowMouth1_Click"/>
+                <Button Content="Mouth 2" Click="ShowMouth2_Click"/>
+                <Button Content="Hair 1" Click="ShowHair1_Click"/>
+                <Button Content="Hair 2" Click="ShowHair2_Click"/>
+                <Button Content="Nose 1" Click="ShowNose1_Click"/>
+                <Button Content="Nose 2" Click="ShowNose2_Click"/>
+                <Button Content="Eye 1"  Click="ShowEye1_Click"/>
+                <Button Content="Eye 2"  Click="ShowEye2_Click"/>
+                <Button Content="Random" Click="Random_Click"/>
+            </StackPanel>
+        </Border>
+
+        <Grid Height="256" Width="256" Margin="272,79,272,99" >
+            <!-- background face image -->
+            <Image x:Name="Face" Source="/images/Face.png" Stretch="UniformToFill" Panel.ZIndex="0"/>
+            <!-- Overlay Images -->
+            <Image x:Name="Eyes1" Source="/images/eye1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1"  />
+            <Image x:Name="Eyes2" Source="/images/eye2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Mouth1" Source="/images/mouth1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Mouth2" Source="/images/mouth2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Hair1" Source="/images/hair1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Hair2" Source="/images/hair2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Nose1" Source="/images/nose1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Nose2" Source="/images/nose2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+        </Grid>
+          
+            
+
+    </Grid>
+</Window>
