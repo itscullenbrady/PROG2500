@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a2\\prog2500_a2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|solutionrelative:prog2500_a2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a2\\prog2500_a2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|solutionrelative:prog2500_a2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a2\\prog2500_a2\\prog2500_a2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|solutionrelative:prog2500_a2\\prog2500_a2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a2\\prog2500_a2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B76DF95-5B36-46B3-AC46-C651B8C11235}|PROG2500_A2\\PROG2500_A2.csproj|solutionrelative:prog2500_a2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A2\\PROG2500_A2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "PROG2500_A2\\MainWindow.xaml",
@@ -38,20 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A2\\PROG2500_A2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PROG2500_A2\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A2\\PROG2500_A2\\MainWindow.xaml.cs",
               "RelativeToolTip": "PROG2500_A2\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwBYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAiwBYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T15:17:40.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PROG2500_A2.csproj",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A2\\PROG2500_A2\\PROG2500_A2.csproj",
               "RelativeDocumentMoniker": "PROG2500_A2\\PROG2500_A2.csproj",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "PROG2500_A2\\PROG2500_A2.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-14T18:37:06.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-14T18:37:06.144Z"
             }
           ]
         }

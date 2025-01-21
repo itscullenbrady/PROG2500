@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace PROG2500_A2
@@ -79,7 +78,7 @@ namespace PROG2500_A2
             else ShowOnly(Hair3, Hair1, Hair2);
         }
 
-        private void ShowOnly(UIElement toShow, params UIElement[] toHide)
+        private static void ShowOnly(UIElement toShow, params UIElement[] toHide)
         {
             toShow.Visibility = Visibility.Visible;
             foreach (var element in toHide)

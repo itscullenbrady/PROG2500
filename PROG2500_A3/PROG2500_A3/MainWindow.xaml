@@ -60,16 +60,16 @@
             <!-- Overlay Images -->
             <Image x:Name="Eyes1" Source="/images/eye1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1"  />
             <Image x:Name="Eyes2" Source="/images/eye2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
-            <Image x:Name="Eyes3" Source="/images/Eye3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Eyes3" Source="/images/eye3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
             <Image x:Name="Mouth1" Source="/images/mouth1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
             <Image x:Name="Mouth2" Source="/images/mouth2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
-            <Image x:Name="Mouth3" Source="/images/Mouth3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Mouth3" Source="/images/mouth3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
             <Image x:Name="Hair1" Source="/images/hair1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
             <Image x:Name="Hair2" Source="/images/hair2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
-            <Image x:Name="Hair3" Source="/images/Hair3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Hair3" Source="/images/hair3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
             <Image x:Name="Nose1" Source="/images/nose1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
             <Image x:Name="Nose2" Source="/images/nose2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
-            <Image x:Name="Nose3" Source="/images/Nose3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Nose3" Source="/images/nose3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
         </Grid>
 
 
