@@ -1,0 +1,78 @@
+﻿<Window x:Class="PROG2500_A2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG2500_A2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <!--EYE CHECKBOX for selecting one of three options-->
+        <Border BorderBrush="Black" BorderThickness="1" Margin="40,10,615,334">
+            <StackPanel>
+                <TextBlock TextAlignment="Center" Background="Beige">Nose Options</TextBlock>
+                <CheckBox x:Name="CBNose1" Content="Nose 1" Checked="Nose1_Checked" Unchecked="Nose1_Unchecked"/>
+                <CheckBox x:Name="CBNose2" Content="Nose 2" Checked="Nose2_Checked" Unchecked="Nose2_Unchecked"/>
+                <CheckBox x:Name="CBNose3" Content="Nose 3" Checked="Nose3_Checked" Unchecked="Nose3_Unchecked"/>
+            </StackPanel>
+        </Border>
+
+        <!--EYE COMBOBOX for selecting one of three options -->
+        <Border BorderBrush="Black" BorderThickness="1" Margin="40,100,615,239">
+            <StackPanel Margin="0,0,0,-1">
+                <TextBlock TextAlignment="Center" Background="Beige">Eye Color</TextBlock>
+                <ComboBox x:Name="EyeColor" SelectedIndex="0" SelectionChanged="EyeColor_SelectionChanged">
+                    <ComboBoxItem Content="Blue"/>
+                    <ComboBoxItem Content="Brown"/>
+                    <ComboBoxItem Content="Green"/>
+                </ComboBox>
+            </StackPanel>
+        </Border>
+        <!--MOUTH RADIO BUTTONS for selecting one of three options-->
+        <Border BorderBrush="Black" BorderThickness="1" Margin="40,195,615,139">
+            <StackPanel>
+                <TextBlock TextAlignment="Center" Background="Beige">Mouth Options</TextBlock>
+                <RadioButton x:Name="RBMouth1" Content="Mouth 1" Checked="Mouth1_Checked" Unchecked="Mouth1_Unchecked"/>
+                <RadioButton x:Name="RBMouth2" Content="Mouth 2" Checked="Mouth2_Checked" Unchecked="Mouth2_Unchecked"/>
+                <RadioButton x:Name="RBMouth3" Content="Mouth 3" Checked="Mouth3_Checked" Unchecked="Mouth3_Unchecked"/>
+            </StackPanel>
+        </Border>
+        <!--HAIR SLIDER for selecting one of three options-->
+        <Border BorderBrush="Black" BorderThickness="1" Margin="40,295,615,52">
+            <StackPanel>
+                <TextBlock TextAlignment="Center" Background="Beige">Hair Options</TextBlock>
+                <Slider x:Name="HairOptions" Minimum="0" Maximum="100" Value="50" ValueChanged="HairOption_ValueChanged"/>
+            </StackPanel>
+        </Border>
+        <!--RANDOM BUTTON-->
+        <Border BorderBrush="Black" BorderThickness="1" Margin="40,382,615,10">
+            <StackPanel>
+                <Button Content="Random" Click="Random_Click" Background="Beige"/>
+            </StackPanel>
+        </Border>
+
+
+
+        <Grid Height="256" Width="256" Margin="272,79,272,99" >
+            <!-- background face image -->
+            <Image x:Name="Face" Source="/images/Face.png" Stretch="UniformToFill" Panel.ZIndex="0"/>
+            <!-- Overlay Images -->
+            <Image x:Name="Eyes1" Source="/images/eye1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1"  />
+            <Image x:Name="Eyes2" Source="/images/eye2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Eyes3" Source="/images/Eye3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Mouth1" Source="/images/mouth1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Mouth2" Source="/images/mouth2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Mouth3" Source="/images/Mouth3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Hair1" Source="/images/hair1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Hair2" Source="/images/hair2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Hair3" Source="/images/Hair3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Nose1" Source="/images/nose1.png" Visibility="Visible" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Nose2" Source="/images/nose2.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+            <Image x:Name="Nose3" Source="/images/Nose3.png" Visibility="Collapsed" Stretch="Uniform" Panel.ZIndex="1" />
+        </Grid>
+
+
+
+    </Grid>
+</Window>
