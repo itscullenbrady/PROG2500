@@ -52,13 +52,18 @@ namespace PROG2500_A2
 
         private void Nose3_Checked(object sender, RoutedEventArgs e) => ShowOnly(Nose3, Nose1, Nose2);
         private void Nose3_Unchecked(object sender, RoutedEventArgs e) => Nose3.Visibility = Visibility.Collapsed;
-
         private void EyeColor_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (Eyes1 == null || Eyes2 == null || Eyes3 == null || EyeColor == null)
+            {
+                return;
+            }
+
             if (EyeColor.SelectedIndex == 0) ShowOnly(Eyes1, Eyes2, Eyes3);
-            else if (EyeColor.SelectedIndex == 1) ShowOnly(Eyes2, Eyes1, Eyes3);
-            else if (EyeColor.SelectedIndex == 2) ShowOnly(Eyes3, Eyes1, Eyes2);
+            else if (EyeColor.SelectedIndex == 1) ShowOnly(Eyes3, Eyes1, Eyes2);
+            else if (EyeColor.SelectedIndex == 2) ShowOnly(Eyes2, Eyes1, Eyes3);
         }
+
 
         private void Mouth1_Checked(object sender, RoutedEventArgs e) => ShowOnly(Mouth1, Mouth2, Mouth3);
         private void Mouth1_Unchecked(object sender, RoutedEventArgs e) => Mouth1.Visibility = Visibility.Collapsed;
@@ -73,18 +78,27 @@ namespace PROG2500_A2
         {
             double value = HairOptions.Value;
 
+            if (Hair1 == null || Hair2 == null || Hair3 == null)
+            {
+                // Handle the null case appropriately
+                return;
+            }
+
             if (value < 33) ShowOnly(Hair1, Hair2, Hair3);
             else if (value < 66) ShowOnly(Hair2, Hair1, Hair3);
             else ShowOnly(Hair3, Hair1, Hair2);
         }
 
+
         private static void ShowOnly(UIElement toShow, params UIElement[] toHide)
         {
+            if (toShow == null) throw new ArgumentNullException(nameof(toShow));
             toShow.Visibility = Visibility.Visible;
             foreach (var element in toHide)
             {
-                element.Visibility = Visibility.Collapsed;
+                if (element != null) element.Visibility = Visibility.Collapsed;
             }
         }
+
     }
 }

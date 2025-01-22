@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PROG2500_A2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        ResizeMode="NoResize">
     <Grid>
 
-        <!--EYE CHECKBOX for selecting one of three options-->
+        <!--NOSE CHECKBOX for selecting one of three options-->
         <Border BorderBrush="Black" BorderThickness="1" Margin="40,10,615,334">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5" Opacity="0.5"/>
+            </Border.Effect>
             <StackPanel>
                 <TextBlock TextAlignment="Center" Background="Beige">Nose Options</TextBlock>
                 <CheckBox x:Name="CBNose1" Content="Nose 1" Checked="Nose1_Checked" Unchecked="Nose1_Unchecked"/>
@@ -20,7 +24,10 @@
 
         <!--EYE COMBOBOX for selecting one of three options -->
         <Border BorderBrush="Black" BorderThickness="1" Margin="40,100,615,239">
-            <StackPanel Margin="0,0,0,-1">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5" Opacity="0.5"/>
+            </Border.Effect>
+            <StackPanel>
                 <TextBlock TextAlignment="Center" Background="Beige">Eye Color</TextBlock>
                 <ComboBox x:Name="EyeColor" SelectedIndex="0" SelectionChanged="EyeColor_SelectionChanged">
                     <ComboBoxItem Content="Blue"/>
@@ -31,6 +38,9 @@
         </Border>
         <!--MOUTH RADIO BUTTONS for selecting one of three options-->
         <Border BorderBrush="Black" BorderThickness="1" Margin="40,195,615,139">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5" Opacity="0.5"/>
+            </Border.Effect>
             <StackPanel>
                 <TextBlock TextAlignment="Center" Background="Beige">Mouth Options</TextBlock>
                 <RadioButton x:Name="RBMouth1" Content="Mouth 1" Checked="Mouth1_Checked" Unchecked="Mouth1_Unchecked"/>
@@ -40,6 +50,9 @@
         </Border>
         <!--HAIR SLIDER for selecting one of three options-->
         <Border BorderBrush="Black" BorderThickness="1" Margin="40,295,615,52">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5" Opacity="0.5"/>
+            </Border.Effect>
             <StackPanel>
                 <TextBlock TextAlignment="Center" Background="Beige">Hair Options</TextBlock>
                 <Slider x:Name="HairOptions" Minimum="0" Maximum="100" Value="50" ValueChanged="HairOption_ValueChanged"/>
@@ -47,6 +60,9 @@
         </Border>
         <!--RANDOM BUTTON-->
         <Border BorderBrush="Black" BorderThickness="1" Margin="40,382,615,10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="5" Opacity="0.5"/>
+            </Border.Effect>
             <StackPanel>
                 <Button Content="Random" Click="Random_Click" Background="Beige"/>
             </StackPanel>
@@ -54,7 +70,7 @@
 
 
 
-        <Grid Height="256" Width="256" Margin="272,79,272,99" >
+        <Grid Height="256" Width="256" Margin="272,79,272,99">
             <!-- background face image -->
             <Image x:Name="Face" Source="/images/Face.png" Stretch="UniformToFill" Panel.ZIndex="0"/>
             <!-- Overlay Images -->

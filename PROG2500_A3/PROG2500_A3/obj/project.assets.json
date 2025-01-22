@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A3\\PROG2500_A3\\PROG2500_A3.csproj",
+      "projectUniqueName": "C:\\Users\\culle\\Downloads\\PROG2500-main (1)\\PROG2500-main\\PROG2500_A3\\PROG2500_A3\\PROG2500_A3.csproj",
       "projectName": "PROG2500_A3",
-      "projectPath": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A3\\PROG2500_A3\\PROG2500_A3.csproj",
+      "projectPath": "C:\\Users\\culle\\Downloads\\PROG2500-main (1)\\PROG2500-main\\PROG2500_A3\\PROG2500_A3\\PROG2500_A3.csproj",
       "packagesPath": "C:\\Users\\culle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A3\\PROG2500_A3\\obj\\",
+      "outputPath": "C:\\Users\\culle\\Downloads\\PROG2500-main (1)\\PROG2500-main\\PROG2500_A3\\PROG2500_A3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
