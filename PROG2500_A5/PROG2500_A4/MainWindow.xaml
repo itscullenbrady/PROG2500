@@ -1,0 +1,91 @@
+﻿<Window x:Class="PROG2500_A4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PROG2500_A4"
+        mc:Ignorable="d"
+        Title="Face Maker" Height="450" Width="800">
+
+    <Grid Margin="10">
+        <!-- Menu -->
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="Hair">
+                <MenuItem Header="Next Hair" Click="NextHair_Click" />
+            </MenuItem>
+            <MenuItem Header="Eyes">
+                <MenuItem Header="Next Eyes" Click="NextEyes_Click" />
+            </MenuItem>
+            <MenuItem Header="Nose">
+                <MenuItem Header="Next Nose" Click="NextNose_Click" />
+            </MenuItem>
+            <MenuItem Header="Mouth">
+                <MenuItem Header="Next Mouth" Click="NextMouth_Click" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="CHM Help File" Click="ChmHelpFile_Click"/>
+                <MenuItem Header="HTML Help Website" Click="HtmlHelpWebsite_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Face Customization Controls -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Base Face -->
+            <Image x:Name="Face" Source="/images/Face.png" Panel.ZIndex="0" />
+
+            <!-- Face Pics-->
+            <Image x:Name="Eyes1" Source="/images/eye1.png" Visibility="Visible" Panel.ZIndex="1" />
+            <Image x:Name="Eyes2" Source="/images/eye2.png" Visibility="Collapsed" Panel.ZIndex="1" />
+            <Image x:Name="Eyes3" Source="/images/eye3.png" Visibility="Collapsed" Panel.ZIndex="1" />
+
+            <Image x:Name="Mouth1" Source="/images/mouth1.png" Visibility="Visible" Panel.ZIndex="1" />
+            <Image x:Name="Mouth2" Source="/images/mouth2.png" Visibility="Collapsed" Panel.ZIndex="1" />
+            <Image x:Name="Mouth3" Source="/images/mouth3.png" Visibility="Collapsed" Panel.ZIndex="1" />
+
+            <Image x:Name="Hair1" Source="/images/hair1.png" Visibility="Visible" Panel.ZIndex="1" />
+            <Image x:Name="Hair2" Source="/images/hair2.png" Visibility="Collapsed" Panel.ZIndex="1" />
+            <Image x:Name="Hair3" Source="/images/hair3.png" Visibility="Collapsed" Panel.ZIndex="1" />
+
+            <Image x:Name="Nose1" Source="/images/nose1.png" Visibility="Visible" Panel.ZIndex="1" />
+            <Image x:Name="Nose2" Source="/images/nose2.png" Visibility="Collapsed" Panel.ZIndex="1" />
+            <Image x:Name="Nose3" Source="/images/nose3.png" Visibility="Collapsed" Panel.ZIndex="1" />
+
+            <!-- Control Buttons -->
+            <StackPanel Grid.Column="1" Orientation="Vertical" VerticalAlignment="Center">
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                    <StackPanel>
+                        <TextBlock Text="Hair" FontWeight="Bold" />
+                        <Button Content="Next Hair" Click="NextHair_Click" />
+                    </StackPanel>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                    <StackPanel>
+                        <TextBlock Text="Eyes" FontWeight="Bold" />
+                        <Button Content="Next Eyes" Click="NextEyes_Click" />
+                    </StackPanel>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                    <StackPanel>
+                        <TextBlock Text="Nose" FontWeight="Bold" />
+                        <Button Content="Next Nose" Click="NextNose_Click" />
+                    </StackPanel>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="1" Margin="5" Padding="5">
+                    <StackPanel>
+                        <TextBlock Text="Mouth" FontWeight="Bold" />
+                        <Button Content="Next Mouth" Click="NextMouth_Click" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <!-- Random Face Button -->
+        <Button Content="Random Face" VerticalAlignment="Bottom" Margin="10" Click="Random_Click" />
+    </Grid>
+</Window>
