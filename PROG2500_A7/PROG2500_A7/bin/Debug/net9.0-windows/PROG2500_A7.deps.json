@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PROG2500_A7/1.0.0": {
+        "runtime": {
+          "PROG2500_A7.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PROG2500_A7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

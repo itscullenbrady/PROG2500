@@ -197,10 +197,10 @@ namespace PROG2500_A4
                 viewModel.SelectedHair = 0;
             }
 
-            // Navigate to Tab #1 (Personal Information)
+            // Navigate to Personal Information tab
             tabControl.SelectedIndex = 0;
 
-            // a confirmation message
+            // a little confirmation message
             MessageBox.Show("All data has been cleared.", "Cancel", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 

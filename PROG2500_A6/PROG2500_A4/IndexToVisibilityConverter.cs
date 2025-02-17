@@ -10,18 +10,18 @@ namespace PROG2500_A4
         // Converts an integer index to Visibility
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            // value: The selected index (e.g., SelectedEyes, SelectedNose, etc.)
+            // value: The selected index (SelectedEyes, SelectedNose, those things)
             // parameter: The target index for this specific image (passed from XAML)
             if (value is int selectedIndex && parameter is string parameterString && int.TryParse(parameterString, out int targetIndex))
             {
                 // If the selected index matches the target index, make the image visible
                 return selectedIndex == targetIndex ? Visibility.Visible : Visibility.Collapsed;
             }
-            // Default to Collapsed if something goes wrong
+            // if something goes wrong default to Collapsed 
             return Visibility.Collapsed;
         }
 
-        // Not needed for this scenario, but required by the IValueConverter interface
+        // Not needed but required by IValueConverter interface
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
