@@ -14,18 +14,26 @@ namespace PROG2500_A7
         private string characterName;
         private Color color;
 
-        public CharacterThread(Dorothy dorothy, string characterName, Color color)
+        //Added lock object vvvv
+        private object lockObject;
+                                                                                        // vvvv lockObject
+        public CharacterThread(Dorothy dorothy, string characterName, Color color, object lockObject)
         {
             this.dorothy = dorothy;
             this.characterName = characterName;
             this.color = color;
+            this.lockObject = lockObject;
         }
 
         public void Run()
         {
-            Thread.Sleep(10); // Simulate some delay
-            dorothy.FavoriteCharacter = characterName;
-            dorothy.FavoriteColor = color;
+            lock (lockObject) //  <<<<<<< Lock the object to prevent multiple threads from accessing it at the same time
+            {
+                
+                dorothy.FavoriteCharacter = characterName;
+                Thread.Sleep(1);
+                dorothy.FavoriteColor = color;
+            }
         }
     }
 }

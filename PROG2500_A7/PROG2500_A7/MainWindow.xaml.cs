@@ -83,19 +83,19 @@ namespace PROG2500_A7
             {
                 tasks.Add(Task.Run(() =>
                 {
-                    new CharacterThread(dorothy, "Tin Man", Color.Silver).Run();
+                    new CharacterThread(dorothy, "Tin Man", Color.Silver, null).Run();
                     UpdateUI("Tin Man", Color.Silver, totalThreads);
                 }));
 
                 tasks.Add(Task.Run(() =>
                 {
-                    new CharacterThread(dorothy, "Scarecrow", Color.Brown).Run();
+                    new CharacterThread(dorothy, "Scarecrow", Color.Brown, null).Run();
                     UpdateUI("Scarecrow", Color.Brown, totalThreads);
                 }));
 
                 tasks.Add(Task.Run(() =>
                 {
-                    new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow).Run();
+                    new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow, null).Run();
                     UpdateUI("Cowardly Lion", Color.Yellow, totalThreads);
                 }));
             }
@@ -120,7 +120,7 @@ namespace PROG2500_A7
                 {
                     lock (lockObject)
                     {
-                        new CharacterThread(dorothy, "Tin Man", Color.Silver).Run();
+                        new CharacterThread(dorothy, "Tin Man", Color.Silver, lockObject).Run();
                         UpdateUI("Tin Man", Color.Silver, totalThreads);
                     }
                 }));
@@ -129,7 +129,7 @@ namespace PROG2500_A7
                 {
                     lock (lockObject)
                     {
-                        new CharacterThread(dorothy, "Scarecrow", Color.Brown).Run();
+                        new CharacterThread(dorothy, "Scarecrow", Color.Brown, lockObject).Run();
                         UpdateUI("Scarecrow", Color.Brown, totalThreads);
                     }
                 }));
@@ -138,7 +138,7 @@ namespace PROG2500_A7
                 {
                     lock (lockObject)
                     {
-                        new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow).Run();
+                        new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow, lockObject).Run();
                         UpdateUI("Cowardly Lion", Color.Yellow, totalThreads);
                     }
                 }));
@@ -159,26 +159,26 @@ namespace PROG2500_A7
             ProgressBar.Value = 0;
 
             List<Thread> threads = new List<Thread>();
-            int threadCount = 1000; // Number of threads per character
+            int threadCount = 100; // Number of threads per character
             int totalThreads = threadCount * 3; // Total number of threads
 
             for (int i = 0; i < threadCount; i++)
             {
-                threads.Add(new Thread(() =>
+                threads.Add(new Thread(() =>                             // vvv added lockObject null because unsynched
                 {
-                    new CharacterThread(dorothy, "Tin Man", Color.Silver).Run();
+                    new CharacterThread(dorothy, "Tin Man", Color.Silver, null).Run();
                     UpdateUI("Tin Man", Color.Silver, totalThreads);
                 }));
 
                 threads.Add(new Thread(() =>
                 {
-                    new CharacterThread(dorothy, "Scarecrow", Color.Brown).Run();
+                    new CharacterThread(dorothy, "Scarecrow", Color.Brown, null).Run();
                     UpdateUI("Scarecrow", Color.Brown, totalThreads);
                 }));
 
                 threads.Add(new Thread(() =>
                 {
-                    new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow).Run();
+                    new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow, null).Run();
                     UpdateUI("Cowardly Lion", Color.Yellow, totalThreads);
                 }));
             }
@@ -216,17 +216,17 @@ namespace PROG2500_A7
             ProgressBar.Value = 0;
 
             List<Thread> threads = new List<Thread>();
-            int threadCount = 1000; // Number of threads per character
+            int threadCount = 100; // Number of threads per character
             int totalThreads = threadCount * 3; // Total number of threads
 
             for (int i = 0; i < threadCount; i++)
             {
                 threads.Add(new Thread(() =>
                 {
-                    lock (lockObject)
-                    {
-                        new CharacterThread(dorothy, "Tin Man", Color.Silver).Run();
-                        UpdateUI("Tin Man", Color.Silver, totalThreads);
+                    lock (lockObject)                                        // vvvvvvvvv
+                    {  // Lock the objects to prevent multiple threads from accessing it at the same time   
+                        new CharacterThread(dorothy, "Tin Man", Color.Silver, lockObject).Run();
+                        UpdateUI("Tin Man", Color.Silver, totalThreads);   
                     }
                 }));
 
@@ -234,7 +234,7 @@ namespace PROG2500_A7
                 {
                     lock (lockObject)
                     {
-                        new CharacterThread(dorothy, "Scarecrow", Color.Brown).Run();
+                        new CharacterThread(dorothy, "Scarecrow", Color.Brown, lockObject).Run();
                         UpdateUI("Scarecrow", Color.Brown, totalThreads);
                     }
                 }));
@@ -243,7 +243,7 @@ namespace PROG2500_A7
                 {
                     lock (lockObject)
                     {
-                        new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow).Run();
+                        new CharacterThread(dorothy, "Cowardly Lion", Color.Yellow, lockObject).Run();
                         UpdateUI("Cowardly Lion", Color.Yellow, totalThreads);
                     }
                 }));
