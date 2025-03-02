@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PROG2500_A4")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77db2484bbb28035268c1512e27f9593e296dc2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef37e729d1ea84393c4c4e91ab4aa3598d461660")]
 [assembly: System.Reflection.AssemblyProductAttribute("PROG2500_A4")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PROG2500_A4")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
