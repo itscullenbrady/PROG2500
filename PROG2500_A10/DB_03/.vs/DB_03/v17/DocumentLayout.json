@@ -3,10 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_CULLE_ONEDRIVE_DESKTOP_PROG2500_PROG2500_A10_DB_03_DB_03_DATADB.MDF/True/SqlTable/dbo.Occupation.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a10\\db_03\\db_03\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\db_03\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|solutionrelative:db_03\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,11 +11,11 @@
       "RelativeMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|solutionrelative:db_03\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a10\\db_03\\db_03\\secondpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\db_03\\secondpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|solutionrelative:db_03\\secondpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a10\\db_03\\db_03\\secondpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\db_03\\secondpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{190EC0AB-AA07-4D86-BB9D-02CB3EA78540}|DB_03\\DB_03.csproj|solutionrelative:db_03\\secondpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -47,21 +44,11 @@
         },
         {
           "DockedWidth": 285,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "dbo.Occupation [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_CULLE_ONEDRIVE_DESKTOP_PROG2500_PROG2500_A10_DB_03_DB_03_DATADB.MDF/True/SqlTable/dbo.Occupation.sql",
-              "ToolTip": "dbo.Occupation [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-03-12T18:32:45.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SecondPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\DB_03\\SecondPage.xaml.cs",
               "RelativeDocumentMoniker": "DB_03\\SecondPage.xaml.cs",
@@ -74,7 +61,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\DB_03\\MainWindow.xaml",
               "RelativeDocumentMoniker": "DB_03\\MainWindow.xaml",
@@ -86,20 +73,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\DB_03\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "DB_03\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\DB_03\\MainWindow.xaml.cs",
               "RelativeToolTip": "DB_03\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAuwPEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T02:10:43.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "SecondPage.xaml",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A10\\DB_03\\DB_03\\SecondPage.xaml",
               "RelativeDocumentMoniker": "DB_03\\SecondPage.xaml",
