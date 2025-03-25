@@ -7,7 +7,7 @@ namespace Project1
 {
     public abstract class myModel
     {
-        // Contain the mesh, position and rotation for this object
+        // Contain the mesh, position, velocity, rotation, and color for this object
         public Model m;
         public Vector3 pos;
         public Vector3 vel;
@@ -25,34 +25,39 @@ namespace Project1
             pos = Vector3.Zero;
             vel = Vector3.Zero;
             rot = Vector3.Zero;
+            rot_vel = Vector3.Zero;
             color = Color.Blue;
             selected = false;
         }
 
-        // Constructor gonna set up the shape
+        // Constructor to set up the shape with position, velocity, and color
         public myModel(Model m, Vector3 pos, Vector3 vel, Color color)
         {
             this.m = m;
             this.pos = pos;
             this.vel = vel;
             this.rot = Vector3.Zero;
+            this.rot_vel = Vector3.Zero;
             this.color = color;
+            selected = false;
         }
 
-        // Constructor to set up the shape
+        // Constructor to set up the shape with color
         public myModel(Model m, Color color)
         {
             this.m = m;
             pos = Vector3.Zero;
             vel = Vector3.Zero;
             rot = Vector3.Zero;
+            rot_vel = Vector3.Zero;
             this.color = color;
+            selected = false;
         }
 
-        public static void setupGraphics(GraphicsDeviceManager _graphics)
+        public static void setupGraphics(GraphicsDeviceManager graphics)
         {
-            // one and only instance of graphics screen
-            myModel._graphics = _graphics;
+            // One and only instance of graphics screen
+            _graphics = graphics;
         }
 
         public void setColor(Color color)
@@ -62,18 +67,18 @@ namespace Project1
 
         public static Texture2D CreateTexture(int width, int height, Func<int, Color> paint)
         {
-            //initialize a texture
+            // Initialize a texture
             Texture2D texture = new Texture2D(_graphics.GraphicsDevice, width, height);
 
-            //the array holds the color for each pixel in the texture
+            // The array holds the color for each pixel in the texture
             Color[] data = new Color[width * height];
-            for (int pixel = 0; pixel < data.Count(); pixel++)
+            for (int pixel = 0; pixel < data.Length; pixel++)
             {
-                //the function applies the color according to the specified pixel
+                // The function applies the color according to the specified pixel
                 data[pixel] = paint(pixel);
             }
 
-            //set the color
+            // Set the color
             texture.SetData(data);
 
             return texture;
@@ -82,16 +87,13 @@ namespace Project1
         // Abstract move method to be implemented by derived classes
         public abstract void Move();
 
-        // default won to false
-        public void draw(Vector3 cameraPosition, float aspectRatio, Vector3 cameraTarget, Vector3 cameraUpDirection, bool won = false)
+        // Draw method to render the model
+        public void draw(Vector3 cameraPosition, float aspectRatio, Vector3 cameraTarget, Vector3 cameraUpDirection)
         {
             // Settings of each iteration through the models
             Model Models = m;
             Vector3 modelPosition = pos;
             Vector3 modelRotation = rot;
-            bool selected = this.selected;
-
-            Texture2D x = m.Meshes[0].MeshParts[0].Effect.Parameters["Texture"].GetValueTexture2D();
 
             // Copy any parent transforms.
             Matrix[] transforms = new Matrix[Models.Bones.Count];
@@ -112,8 +114,8 @@ namespace Project1
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f),
                         aspectRatio, 1.0f, 10000.0f);
 
-                    // need texture enabled to change color
-                    effect.TextureEnabled = true; // sorta blue-ish
+                    // Need texture enabled to change color
+                    effect.TextureEnabled = true;
                     effect.Texture = CreateTexture(64, 64, pixel => color);
 
                     // Change color of the selected model

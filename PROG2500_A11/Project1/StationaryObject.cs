@@ -9,10 +9,11 @@ namespace Project1
         public StationaryObject(Model m, Vector3 pos, Vector3 vel, Color color) : base(m, pos, vel, color) { }
         public StationaryObject(Model m, Color color) : base(m, color) { }
 
-        // Override the Move method to do nothing nada zip 
+        // Override the Move method to do nothing
         public override void Move()
         {
-            // the stationary object doesn't move obvi
+            // The stationary object doesn't move
         }
     }
 }
+

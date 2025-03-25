@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a11\\project1\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a11\\project1\\mymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|solutionrelative:mymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a11\\project1\\movingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|solutionrelative:movingobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a11\\project1\\stationaryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|solutionrelative:stationaryobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|c:\\users\\culle\\onedrive\\desktop\\prog2500\\prog2500_a11\\project1\\mymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C711A2B-E299-4619-920E-9C1100C25DBC}|Project1.csproj|solutionrelative:mymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +42,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\Game1.cs",
+              "RelativeDocumentMoniker": "Game1.cs",
+              "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\Game1.cs",
+              "RelativeToolTip": "Game1.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvx8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T20:03:07.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "myModel.cs",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\myModel.cs",
               "RelativeDocumentMoniker": "myModel.cs",
               "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\myModel.cs",
               "RelativeToolTip": "myModel.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T19:05:11.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StationaryObject.cs",
-              "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\StationaryObject.cs",
-              "RelativeDocumentMoniker": "StationaryObject.cs",
-              "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\StationaryObject.cs",
-              "RelativeToolTip": "StationaryObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T19:05:16.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MovingObject.cs",
               "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\MovingObject.cs",
               "RelativeDocumentMoniker": "MovingObject.cs",
               "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\MovingObject.cs",
               "RelativeToolTip": "MovingObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T19:05:16.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StationaryObject.cs",
+              "DocumentMoniker": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\StationaryObject.cs",
+              "RelativeDocumentMoniker": "StationaryObject.cs",
+              "ToolTip": "C:\\Users\\culle\\OneDrive\\Desktop\\PROG2500\\PROG2500_A11\\Project1\\StationaryObject.cs",
+              "RelativeToolTip": "StationaryObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T19:05:16.955Z",
               "EditorCaption": ""
             }
           ]
